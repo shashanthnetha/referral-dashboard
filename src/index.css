@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+a {
+  color: #336dce;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 17px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-right a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-right button {
+  padding: 5px 12px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.section {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.overview-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.overview-card h3 {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.overview-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.summary-info p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.summary-info strong {
+  display: inline-block;
+  width: 160px;
+}
+
+.share-row {
+  margin-bottom: 12px;
+}
+
+.share-row label {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.share-row div {
+  display: flex;
+  gap: 8px;
+}
+
+.share-row input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.share-row button {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.controls input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 200px;
+}
+
+.controls select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #f9f9f9;
+  font-size: 13px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.pagination button {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pagination button.active {
+  background: #336dce;
+  color: white;
+  border-color: #336dce;
+}
+
+.showing-text {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.login-form {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 30px 25px;
+  width: 360px;
+}
+
+.login-form h1 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.login-form .sub {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 8px;
+  background: #336dce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.detail-box {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 18px;
+  max-width: 450px;
+}
+
+.detail-box h1 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.detail-item span:first-child {
+  color: #777;
+}
+
+.detail-item span:last-child {
+  font-weight: bold;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.not-found-page {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found-page h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #777;
+}
+
+.error {
+  text-align: center;
+  padding: 50px;
+  color: red;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #ddd;
+  background: white;
+  margin-top: auto;
+}
+
+@media (max-width: 700px) {
+  .overview-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input {
+    width: 100%;
+  }
+}
